@@ -5,12 +5,20 @@ public class Todo {
         return ++nextId;
     }
 
+    // VARIABLES PRIVATE
+    // METHODS PUBLIC
     private int id;
     private String title;
 
     public Todo(String title) {
-        this.title = title;
+        this.title = capitaliseTitle(title);
         id = getNextId();
+    }
+
+    // PRIVATE METHODS -> THINGS YOU DON'T NEED TO SHARE
+    //
+    protected String capitaliseTitle(String title){
+        return title.toUpperCase().charAt(0) + title.substring(1);
     }
 
     public static void setNextId(int nextId) {

@@ -3,6 +3,8 @@ import java.util.List;
 
 public class TodoList {
 
+    // ACCESS MODIFIER
+    // - WE CAN'T ACCESS OUTSIDE OF THE CLASS
     private final List<Todo> todos = new ArrayList<>();
 
     public TodoList() {
@@ -20,6 +22,9 @@ public class TodoList {
         return null;
     }
 
+    // OVERLOADING
+    // SAME METHOD SIGNATURE
+    // DIFFERENT PARAMETERS
     public boolean addTodo(Todo todo) {
         return todos.add(todo);
     }
