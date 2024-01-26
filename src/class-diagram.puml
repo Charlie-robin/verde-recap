@@ -1,0 +1,27 @@
+@startuml
+
+class Todo {
+int id
+String title
+toString()
+}
+
+class NeedTodo extends Todo {
+int id
+String title
+toString()
+}
+
+class TodoList {
+List<Todo> todos
+getTodo(int id)
+addTodo(Todo todo)
+addTodo(String title)
+remove()
+remove(int id)
+printTodos()
+}
+
+TodoList -- Todo
+
+@enduml
