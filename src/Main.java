@@ -1,24 +1,16 @@
+import discount.StaffDiscount;
+import stock.Ball;
+import stock.Hat;
+import stock.Promotion;
 
 public class Main {
     public static void main(String[] args) {
-        // ENCAPSULATION
-        TodoList todoList = new TodoList();
-        todoList.printTodos();
-        Todo todoOne = todoList.getTodo(1);
+        Basket basket  = new Basket();
 
-        // ABSTRACTION
-        Todo cleaning = new Todo("Do cleaning");
+        basket.printBasket();
 
-        // INHERITANCE
-        Todo washing = new NeedTodo("Do Washing");
-        // POLYMORPHISM
-        // - OVERRIDING
+        basket.makePurchases();
 
-        // - OVERLOADING
-        todoList.addTodo("Buy Shopping");
-        todoList.addTodo(cleaning);
-        todoList.addTodo(washing);
 
-        todoList.printTodos();
     }
 }

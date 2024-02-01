@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76df0bca-d23c-4551-b135-85432efb4852" name="Changes" comment="# ----------------------------------------------------------&#10;# Header - (type): Brief imperative description&#10;# ----------------------------------------------------------&#10;#   * feat         A new feature&#10;#   * setup        Creation, adding packages&#10;#   * fix          A bug fix&#10;#   * docs         Changes to documentation only&#10;#   * style        Style/format changes (whitespace, etc.)&#10;#   * refactor     Changes not related to a bug or feature&#10;#   * chore        Changes to grunt tasks etc; no production code change&#10;#   * test         Changes that add/modify/correct tests&#10;#   * build        Changes to build system (configs, etc.)&#10;#   * ci           Changes to CI pipeline/workflow&#10;# ----------------------------------------------------------&#10;&#10;# -------------------------------------------------------------------  # &lt;-END&#10;&#10;# ----------------------------------------------------------&#10;# Body - More detailed description, if necessary&#10;# ----------------------------------------------------------&#10;#   * Motivation behind changes, more detail into how&#10;# functionality might be affected, etc.&#10;# ----------------------------------------------------------&#10;&#10;# -------------------------------------------------------------------  # &lt;-END&#10;# ----------------------------------------------------------&#10;# Footer - Associated issues, PRs, etc.&#10;# ----------------------------------------------------------&#10;#   * Ex: Resolves Issue #207, see PR #15, etc.&#10;# ---------------------------------------------------------">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Todo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TodoList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/class-diagram.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verde-recap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Basket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/discount/BlackFridayDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/discount/Discounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stock/Ball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stock/Hat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stock/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stock/Promotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stock/Purchasable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NeedTodo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodoList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class-diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/class-diagram.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +28,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="UML Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="oop-recap-starter" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -40,15 +51,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="verde-recap" />
@@ -56,8 +67,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringTransformer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringTransformer" />
+      <module name="verde-recap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.StringTransformer" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -71,6 +91,14 @@
       <option name="presentableId" value="Default" />
       <updated>1706269126802</updated>
     </task>
+    <task id="LOCAL-00001" summary="# ----------------------------------------------------------&#10;# Header - (type): Brief imperative description&#10;# ----------------------------------------------------------&#10;#   * feat         A new feature&#10;#   * setup        Creation, adding packages&#10;#   * fix          A bug fix&#10;#   * docs         Changes to documentation only&#10;#   * style        Style/format changes (whitespace, etc.)&#10;#   * refactor     Changes not related to a bug or feature&#10;#   * chore        Changes to grunt tasks etc; no production code change&#10;#   * test         Changes that add/modify/correct tests&#10;#   * build        Changes to build system (configs, etc.)&#10;#   * ci           Changes to CI pipeline/workflow&#10;# ----------------------------------------------------------&#10;(feat): Updated README.md&#10;# -------------------------------------------------------------------  # &lt;-END&#10;&#10;# ----------------------------------------------------------&#10;# Body - More detailed description, if necessary&#10;# ----------------------------------------------------------&#10;#   * Motivation behind changes, more detail into how&#10;# functionality might be affected, etc.&#10;# ----------------------------------------------------------&#10;&#10;# -------------------------------------------------------------------  # &lt;-END&#10;# ----------------------------------------------------------&#10;# Footer - Associated issues, PRs, etc.&#10;# ----------------------------------------------------------&#10;#   * Ex: Resolves Issue #207, see PR #15, etc.&#10;# ---------------------------------------------------------">
+      <created>1706720336485</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706720336485</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,5 +111,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="# ----------------------------------------------------------&#10;# Header - (type): Brief imperative description&#10;# ----------------------------------------------------------&#10;#   * feat         A new feature&#10;#   * setup        Creation, adding packages&#10;#   * fix          A bug fix&#10;#   * docs         Changes to documentation only&#10;#   * style        Style/format changes (whitespace, etc.)&#10;#   * refactor     Changes not related to a bug or feature&#10;#   * chore        Changes to grunt tasks etc; no production code change&#10;#   * test         Changes that add/modify/correct tests&#10;#   * build        Changes to build system (configs, etc.)&#10;#   * ci           Changes to CI pipeline/workflow&#10;# ----------------------------------------------------------&#10;(feat): Updated README.md&#10;# -------------------------------------------------------------------  # &lt;-END&#10;&#10;# ----------------------------------------------------------&#10;# Body - More detailed description, if necessary&#10;# ----------------------------------------------------------&#10;#   * Motivation behind changes, more detail into how&#10;# functionality might be affected, etc.&#10;# ----------------------------------------------------------&#10;&#10;# -------------------------------------------------------------------  # &lt;-END&#10;# ----------------------------------------------------------&#10;# Footer - Associated issues, PRs, etc.&#10;# ----------------------------------------------------------&#10;#   * Ex: Resolves Issue #207, see PR #15, etc.&#10;# ---------------------------------------------------------" />
+    <option name="LAST_COMMIT_MESSAGE" value="# ----------------------------------------------------------&#10;# Header - (type): Brief imperative description&#10;# ----------------------------------------------------------&#10;#   * feat         A new feature&#10;#   * setup        Creation, adding packages&#10;#   * fix          A bug fix&#10;#   * docs         Changes to documentation only&#10;#   * style        Style/format changes (whitespace, etc.)&#10;#   * refactor     Changes not related to a bug or feature&#10;#   * chore        Changes to grunt tasks etc; no production code change&#10;#   * test         Changes that add/modify/correct tests&#10;#   * build        Changes to build system (configs, etc.)&#10;#   * ci           Changes to CI pipeline/workflow&#10;# ----------------------------------------------------------&#10;(feat): Updated README.md&#10;# -------------------------------------------------------------------  # &lt;-END&#10;&#10;# ----------------------------------------------------------&#10;# Body - More detailed description, if necessary&#10;# ----------------------------------------------------------&#10;#   * Motivation behind changes, more detail into how&#10;# functionality might be affected, etc.&#10;# ----------------------------------------------------------&#10;&#10;# -------------------------------------------------------------------  # &lt;-END&#10;# ----------------------------------------------------------&#10;# Footer - Associated issues, PRs, etc.&#10;# ----------------------------------------------------------&#10;#   * Ex: Resolves Issue #207, see PR #15, etc.&#10;# ---------------------------------------------------------" />
   </component>
 </project>

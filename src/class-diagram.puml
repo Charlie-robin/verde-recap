@@ -1,27 +1,52 @@
 @startuml
 
-class Todo {
-int id
-String title
-toString()
+interface Discounter {
+    double applyDiscount(int price)
 }
 
-class NeedTodo extends Todo {
-int id
-String title
-toString()
+class StaffDiscount implements Discounter {
+    double applyDiscount(int price)
 }
 
-class TodoList {
-List<Todo> todos
-getTodo(int id)
-addTodo(Todo todo)
-addTodo(String title)
-remove()
-remove(int id)
-printTodos()
+class BlackFridayDiscount implements Discounter {
+    double applyDiscount(int price)
 }
 
-TodoList -- Todo
+Basket - Discounter
+
+class Basket {
+    List<Purchasable> purchases
+    Discounter discount
+    void sortBasket()
+    void makePurchases()
+    boolean addPurchase(Purchasable purchase)
+}
+
+abstract class Product implements Purchasable{
+    int getId()
+}
+
+interface Purchasable {
+    double getPrice()
+    String getReceipt()
+}
+
+class Hat extends Product {
+    double getPrice()
+    String getReceipt()
+}
+
+class Ball extends Product {
+    double getPrice()
+    String getReceipt()
+}
+
+class Promotion implements Purchasable {
+    double getPrice()
+    String getReceipt()
+}
+
+Basket -- Purchasable
+
 
 @enduml
