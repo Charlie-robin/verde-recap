@@ -1,6 +1,6 @@
 package discount;
 
-class BlackFridayDiscount implements Discounter {
+public class BlackFridayDiscount implements Discounter {
 
     @Override
     public double applyDiscount(double price) {

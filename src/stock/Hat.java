@@ -12,4 +12,9 @@ public class Hat extends Product {
     }
 
 
+    @Override
+    public int compareTo(Purchasable o) {
+        return (int) (getPrice() - o.getPrice());
+    }
+
 }

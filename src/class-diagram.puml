@@ -26,7 +26,7 @@ abstract class Product implements Purchasable{
     int getId()
 }
 
-interface Purchasable {
+interface Purchasable extends Comparable {
     double getPrice()
     String getReceipt()
 }
@@ -47,6 +47,10 @@ class Promotion implements Purchasable {
 }
 
 Basket -- Purchasable
+
+class GiftWrap implements Purchasable {
+
+}
 
 
 @enduml

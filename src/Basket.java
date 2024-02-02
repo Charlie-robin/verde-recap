@@ -2,6 +2,7 @@ import discount.Discounter;
 import stock.Purchasable;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 class Basket {
@@ -22,6 +23,7 @@ class Basket {
 
     public void sortBasket(){
         // ...
+        Collections.sort(basket);
     }
 
     public void makePurchases() {

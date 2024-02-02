@@ -12,5 +12,9 @@ public class Ball extends Product {
     }
 
 
+    @Override
+    public int compareTo(Purchasable o) {
+        return (int) (getPrice() - o.getPrice());
+    }
 }
 

@@ -10,4 +10,9 @@ public class Promotion implements Purchasable {
     public String getReceipt() {
         return "Promotion - Free";
     }
+
+    @Override
+    public int compareTo(Purchasable o) {
+        return -1;
+    }
 }
